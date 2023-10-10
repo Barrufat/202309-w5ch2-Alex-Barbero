@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "start": "node .",
-    "start:dev": "node --watch .",
+    "start:dev": "node . --watch",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -32,6 +32,8 @@
     }
   },
   "dependencies": {
+    "@babel/core": "^7.23.0",
+    "@commitlint/config-conventional": "^17.7.0",
     "lint-staged": "^14.0.1"
   }
 }
